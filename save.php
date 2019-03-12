@@ -1,4 +1,5 @@
 <?php
+
 $username = $_POST['username']; 
 $email = $_POST['email']; 
 $password=$_POST['password']; 
@@ -6,7 +7,7 @@ $password=$_POST['password'];
  //удаляем лишние пробелы
     $username = trim($username);
     $password = trim($password);
-$email = trim($email);
+    $email = trim($email);
 
 
  // проверяем данные
@@ -45,6 +46,7 @@ $errorMessage = 'ОШИБКА РЕГИСТРАЦИИ!';
 include 'errors.php';
   exit;
   }
+
   // переадр на авториз
   
   header('Location: /login-form.php'); 
